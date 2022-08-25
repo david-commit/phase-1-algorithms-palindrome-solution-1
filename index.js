@@ -1,13 +1,32 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let loweredWord = word.toLowerCase().split('')
+  let reveresedWord = loweredWord.reverse().join('')
+  
+  if (word === reveresedWord){
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  Create a function
+  receives an argument
+  Split the string into an array
+  Reverse the string
+  Join the string
+  if sting === reversed string
+    return true
+    if not
+    return false
 */
 
 /*
-  Add written explanation of your solution here
+  Make a function that returns true is the word is a pallendrome and false
+   if not, meaning if the word is the same in reverse it should return true
+
+   mom === mom //true
+   abc === cba //false
 */
 
 // You can run `node index.js` to view these console logs
